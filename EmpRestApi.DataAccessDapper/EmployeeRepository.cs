@@ -38,7 +38,7 @@ namespace EmpRestApi.DataAccessDapper
 
         }
 
-        public async Task  Update(int Id, Employee employee)
+        public async Task  Update( Employee employee)
         {
             var query = "update employee set FirstName = @FirstName," +
                 "LastName = @LastName, " +

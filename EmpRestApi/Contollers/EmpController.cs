@@ -49,7 +49,7 @@ namespace EmpRestApi.Contollers
             if (emp == null)
                 throw new KeyNotFoundException("User not found");
             else
-                await _irepositoryBase.Update(id, employee);
+                await _irepositoryBase.Update(employee);
                 return Ok(new { message = "Given Id Employee details updated" });
         }
 

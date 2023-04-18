@@ -8,7 +8,7 @@ namespace EmpRestApi.DataAccessDapper
         Task<IEnumerable<Employee>> GetAll();
         Task<IEnumerable<Employee>> GetEmpById(int Id);
         Task Add(Employee employee);
-        Task Update(int Id , Employee employee);
+        Task Update(Employee employee);
         Task Delete(int Id);
 
     }
